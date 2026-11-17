@@ -1,0 +1,4 @@
+{
+  "extra_video_extensions": [".m3u8", ".mpd", ".ts", ".webm"],
+  "blocked_domains": ["youtube.com", "youtu.be"]
+}
