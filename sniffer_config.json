@@ -1,4 +1,5 @@
 {
   "extra_video_extensions": [".m3u8", ".mpd", ".ts", ".webm"],
+  "extra_audio_extensions": [".flac", ".alac", ".wma"],
   "blocked_domains": ["youtube.com", "youtu.be"]
 }
