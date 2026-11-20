@@ -1,5 +1,6 @@
 {
   "extra_video_extensions": [".m3u8", ".mpd", ".ts", ".webm"],
   "extra_audio_extensions": [".flac", ".alac", ".wma"],
+  "audio_url_keywords": ["mime_type=audio", "content_type=audio", "dash_audio", "audio_only"],
   "blocked_domains": ["youtube.com", "youtu.be"]
 }
