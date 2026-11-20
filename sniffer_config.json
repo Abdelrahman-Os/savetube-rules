@@ -1,6 +1,61 @@
 {
-  "extra_video_extensions": [".m3u8", ".mpd", ".ts", ".webm"],
-  "extra_audio_extensions": [".flac", ".alac", ".wma"],
+  "version": 2,
+  "prefer_ffmpeg_hls": true,
+  "auto_merge_audio": true,
+  "min_video_size_bytes": 120000,
+  "extra_video_extensions": [".m4v", ".flv", ".f4v"],
+  "extra_audio_extensions": [".flac", ".weba"],
   "audio_url_keywords": ["mime_type=audio", "content_type=audio", "dash_audio", "audio_only"],
-  "blocked_domains": ["youtube.com", "youtu.be"]
+  "extra_media_url_patterns": [
+    "twimg.com&&.mp4",
+    "twimg.com&&.m3u8",
+    "pinimg.com&&.m3u8",
+    "licdn.com&&playlist/vid",
+    "v.redd.it&&hlsplaylist",
+    "sc-cdn.net&&media",
+    "sndcdn.com&&playlist",
+    "cloudflarestream.com&&.m3u8",
+    "videodelivery.net&&.m3u8",
+    "stream.mux.com&&.m3u8",
+    "akamaized.net&&.m3u8",
+    "cloudfront.net&&.m3u8"
+  ],
+  "extra_ad_patterns": [
+    "doubleclick.net",
+    "googlesyndication.com",
+    "googleadservices.com",
+    "adnxs.com",
+    "adsrvr.org",
+    "/ads/",
+    "preroll",
+    "midroll"
+  ],
+  "extra_json_video_keys": [
+    "playable_url_quality_hd",
+    "playable_url",
+    "browser_native_hd_url",
+    "browser_native_sd_url",
+    "video_url",
+    "contentUrl",
+    "playAddr",
+    "downloadAddr"
+  ],
+  "extra_iframe_keywords": [
+    "player",
+    "embed",
+    "vimeo",
+    "dailymotion",
+    "brightcove",
+    "jwplatform",
+    "cloudflare"
+  ],
+  "custom_user_agents": {},
+  "custom_referers": {},
+  "blocked_domains": [
+    "youtube.com",
+    "youtu.be",
+    "googlevideo.com",
+    "youtube-nocookie.com",
+    "ytimg.com"
+  ]
 }
